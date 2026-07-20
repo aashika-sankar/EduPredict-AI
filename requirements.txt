@@ -4,3 +4,7 @@ joblib
 plotly
 reportlab
 scikit-learn
+numpy
+xgboost
+catboost
+optuna
