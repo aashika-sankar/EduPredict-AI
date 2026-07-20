@@ -608,7 +608,6 @@ with tab3:
     st.divider()
     with st.container(border=True):
         st.subheader("📋 Model Evaluation Summary")
-        st.dataframe(model_summary_df, use_container_width=True)
         model_metrics = pd.DataFrame({
             "Model": [
                 "Linear Regression",
