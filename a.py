@@ -606,46 +606,46 @@ with tab3:
     "Comparison of different regression algorithms based on their R² scores.")
 
     st.divider()
-    
-    st.subheader("📋 Model Evaluation Summary")
-    
-    model_metrics = pd.DataFrame({
-        "Model": [
-            "Linear Regression",
-            "Decision Tree",
-            "Random Forest",
-            "Gradient Boosting",
-            "XGBoost",
-            "CatBoost",
-            "Stacking"
-        ],
-        "R² Score": [
-            0.6875,
-            0.0694,
-            0.6485,
-            0.7343,
-            0.7448,
-            0.7635,
-            0.7576
-        ],
-        "MAE": [
-            1.0184,
-            1.7110,
-            1.0912,
-            0.7698,
-            0.6490,
-            0.5687,
-            0.5770
-        ],
-        "RMSE": [
-            2.1017,
-            3.6269,
-            2.2290,
-            1.9381,
-            1.8993,
-            1.8285,
-            1.8509
-        ]
+    with st.container(border=True):
+        st.subheader("📋 Model Evaluation Summary")
+        st.dataframe(model_summary_df, use_container_width=True)
+        model_metrics = pd.DataFrame({
+            "Model": [
+                "Linear Regression",
+                "Decision Tree",
+                "Random Forest",
+                "Gradient Boosting",
+                "XGBoost",
+                "CatBoost",
+                "Stacking"
+            ],
+            "R² Score": [
+                0.6875,
+                0.0694,
+                0.6485,
+                0.7343,
+                0.7448,
+                0.7635,
+                0.7576
+            ],
+            "MAE": [
+                1.0184,
+                1.7110,
+                1.0912,
+                0.7698,
+                0.6490,
+                0.5687,
+                0.5770
+            ],
+            "RMSE": [
+                2.1017,
+                3.6269,
+                2.2290,
+                1.9381,
+                1.8993,
+                1.8285,
+                1.8509
+            ]
     })
 
     st.dataframe(
