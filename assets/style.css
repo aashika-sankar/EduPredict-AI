@@ -1,0 +1,100 @@
+/* Background */
+.stApp{
+    background-color:#F8FAFC;
+}
+
+/* Main Title */
+.main-title{
+    font-size:42px;
+    font-weight:700;
+    color:#0F172A;
+    text-align:center;
+}
+
+.sub-title{
+    font-size:18px;
+    color:#475569;
+    text-align:center;
+    margin-bottom:30px;
+}
+/* General text color */
+html, body, [class*="css"] {
+    color: #1E293B;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #0F172A !important;
+}
+
+/* Paragraphs and markdown */
+p, li, span, label {
+    color: #334155 !important;
+}
+
+/* Number Input */
+.stNumberInput input {
+    background-color: white !important;
+    color: #111827 !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 8px !important;
+}
+
+/* Selectbox */
+div[data-baseweb="select"] > div {
+    background-color: white !important;
+    color: #111827 !important;
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 8px !important;
+}
+
+/* + and - buttons */
+button[kind="secondary"] {
+    background: white !important;
+    color: #2563EB !important;
+    border: 1px solid #CBD5E1 !important;
+}
+
+button[kind="secondary"]:hover {
+    background: #EFF6FF !important;
+}
+
+/* ---------- Expander ---------- */
+
+div[data-testid="stExpander"] {
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* Header */
+div[data-testid="stExpander"] summary {
+    background: #8ecaf2 !important;   /* Light Sky Blue */
+    color: #0F172A !important;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 18px;
+}
+
+/* Hover */
+div[data-testid="stExpander"] summary:hover {
+    background: #BAE6FD !important;
+}
+
+/* Primary Button */
+div.stButton > button {
+    background-color: #a5b9e5 !important;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+div.stButton > button:hover {
+    background-color: #8da3df;
+    color: white;
+}
