@@ -98,3 +98,25 @@ div.stButton > button:hover {
     background-color: #8da3df;
     color: white;
 }
+
+/* Force Selectbox containers to have a light/white background */
+div[data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    border: 1px solid #d1d5db !important;
+}
+
+/* Style the dropdown menu options popup */
+ul[data-baseweb="menu"] {
+    background-color: #ffffff !important;
+}
+
+ul[data-baseweb="menu"] li {
+    color: #1f2937 !important;
+}
+
+/* Fix text input & number input backgrounds if needed */
+div[data-baseweb="input"] > div {
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+}
